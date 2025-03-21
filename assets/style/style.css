@@ -16,6 +16,7 @@ body{
     margin: 0 100px;
     background-color: #13293D;
     color: #E8F1F2;
+    overflow-x: hidden;
 }
 
 .objetivo, .profissional, .academico, .certificacoes, .softskills, header {
@@ -185,4 +186,162 @@ footer{
     justify-content: center;
     align-items: center;
     color: #DDD;
+}
+
+.menuMobile{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    
+}
+
+@media (max-width: 750px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav img{
+        margin-left: 25px;
+    }
+
+    .menu{
+        display: none;
+    }
+    .btn_menuMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        height: 75px;
+        width: 75px;
+        transition: rotate 0.5s linear;
+    }
+
+    .btn_menuMobile div{
+        width: 30px;
+        background-color: #1B98E0;
+        height: 5px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+
+    aside{
+        width: 100vw;
+    }
+
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        text-align: right;
+        width: 90%;
+        height: 80vh;
+        position: fixed;
+        top:75px;
+        left: auto;
+        right: -100%;
+        background-color: rgba(27, 152, 224,0.8);
+        transition: right 0.5s linear;
+    }
+
+    .menuMobile div{
+        font-size: 35px;
+        padding: 30px 20px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    header{
+        border: solid;
+        padding: 50px 50px;
+        width: 150vw;
+        margin: 0;
+    }
+
+    header h1{
+        font-size: 35px;
+        margin: 0;
+        padding-left: 50px;
+        padding-right: 0px;
+        width: 500px;
+    }
+
+    header img{
+        margin: 0 0 0 120px;
+        height: 125px;
+        width: 93.75px;
+    }
+
+    .objetivo, .profissional{
+        margin:0 auto 0 auto;
+        padding-top: 0;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .objetivo h2{
+        font-size: var(--h2font);
+        padding-left:140px;
+    }
+
+    .profissional h2, .academico h2, .certificacoes h2, .softskills h2{
+        font-size: var(--h2font);
+        text-align: center;
+        padding-left:80px;
+    }
+
+    .objetivo div{
+        font-size: 25px;
+        text-align: justify;
+        padding-left:80px;
+        width: 100vw;
+    }
+
+    .profissional div{
+        font-size: 25px;
+        padding-left: 45px;
+        width: 100vw;
+    }
+
+    .academico div{
+        font-size: 25px;
+        padding-left: 50px;
+        width: 100vw;
+    }
+
+    .academico strong{
+        font-size: 25px;
+    }
+
+    .certificacoes ul{
+        padding-left: 120px;
+        padding-right: 0;
+    }
+
+    .certificacoes li, .certificacoes a, .softskills li{
+        margin-bottom: 25px;
+        font-size: 25px;
+    }
+
+    .softskills ul{
+        padding-left: 100px;
+    }
+
+    h4, p{
+        padding-left: 80px;
+        text-align: justify;
+    }
+
+    footer{
+        width: 150vw;
+    }
 }
