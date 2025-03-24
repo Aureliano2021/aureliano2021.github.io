@@ -200,6 +200,7 @@ footer{
     body{
         margin: 0;
         padding: 0;
+        font-size: 5vw;
     }
 
     nav{
@@ -243,7 +244,8 @@ footer{
         justify-content: flex-start;
         align-items: flex-end;
         text-align: right;
-        width: 90%;
+        width: 80%;
+        max-width: 100%;
         height: 80vh;
         position: fixed;
         top:75px;
@@ -261,87 +263,104 @@ footer{
     }
 
     header{
-        border: solid;
-        padding: 50px 50px;
-        width: 150vw;
+        padding: 50px 5%;
+        width: 100%;
         margin: 0;
     }
 
     header h1{
-        font-size: 35px;
-        margin: 0;
-        padding-left: 50px;
+        font-size: 7vw;
+        margin: 0 auto;
+        padding-left: 5%;
         padding-right: 0px;
-        width: 500px;
+        width: auto;
     }
 
     header img{
-        margin: 0 0 0 120px;
-        height: 125px;
-        width: 93.75px;
+        margin: 0 auto;
+        height: auto;
+        max-width: 100px;
     }
 
     .objetivo, .profissional{
-        margin:0 auto 0 auto;
+        margin:0 auto;
         padding-top: 0;
         flex-direction: column;
-        width: 100vw;
+        width: 100%;
     }
 
     .objetivo h2{
-        font-size: var(--h2font);
-        padding-left:140px;
+        font-size: 7vw;
+        margin: 0 auto;
+        padding: 5% 5%;
+        width: auto;
     }
 
     .profissional h2, .academico h2, .certificacoes h2, .softskills h2{
-        font-size: var(--h2font);
+        font-size: 7vw;
+        margin: 0 auto;
         text-align: center;
-        padding-left:80px;
+        width: auto;
     }
 
     .objetivo div{
-        font-size: 25px;
-        text-align: justify;
-        padding-left:80px;
-        width: 100vw;
+        font-size: 6vw;
+        margin: 0 auto;
+        text-align: center;
+        width: auto;
     }
 
     .profissional div{
-        font-size: 25px;
-        padding-left: 45px;
-        width: 100vw;
+        font-size: 6vw;
+        margin: 0 auto;
+        padding: 0 5%;
+        text-align: center;
+        width: auto;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .academico div{
-        font-size: 25px;
-        padding-left: 50px;
-        width: 100vw;
+        font-size: 6vw;
+        margin: 0 auto;
+        padding: 0 5%;
+        text-align: center;
+        width: auto;
     }
 
     .academico strong{
-        font-size: 25px;
+        font-size: 6vw;
     }
 
     .certificacoes ul{
-        padding-left: 120px;
-        padding-right: 0;
+        margin: 0 auto;
+        width: auto;
     }
 
     .certificacoes li, .certificacoes a, .softskills li{
-        margin-bottom: 25px;
-        font-size: 25px;
+        margin: 10% auto;
+        font-size: 6vw;
+        width: auto;
     }
 
     .softskills ul{
-        padding-left: 100px;
+        margin: 0 auto;
+        width: auto;
     }
 
     h4, p{
-        padding-left: 80px;
+        font-size: 6vw;
+        margin: 0 auto;
+        padding: 5% 5%;
         text-align: justify;
+        width: auto;
     }
 
     footer{
-        width: 150vw;
+        font-size: 6vw;
+        margin: 0 auto;
+        padding: 5% 5%;
+        text-align: justify;
+        width: auto;
     }
 }
