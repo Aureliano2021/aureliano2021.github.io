@@ -1,13 +1,6 @@
 let apertou = true
 let recarregado = true;
 
-function caixaAlta(value){
-    document.querySelectorAll(value).forEach(element => {
-        let caixaAltagroup = element.textContent
-        element.textContent = caixaAltagroup.toUpperCase()
-    });
-}
-
 function newlayout(){
     if(window.innerWidth < 750){
         document.querySelector('.objetivo').innerHTML = 
@@ -73,9 +66,6 @@ function newlayout(){
             location.reload(); 
         }
     }
-    caixaAlta('header h1')
-
-    caixaAlta('main h2')
 }
 
 document.querySelectorAll('.btn_objetivo').forEach((e) => e.addEventListener('click', () => {
@@ -130,7 +120,3 @@ document.querySelector(".btn_menuMobile").addEventListener('click',function novo
 newlayout()
 
 window.addEventListener('resize', newlayout)
-
-caixaAlta('header h1')
-
-caixaAlta('main h2')

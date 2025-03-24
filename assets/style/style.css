@@ -94,6 +94,7 @@ header h1{
     align-items: center;
     justify-content: center;
     font-size: 50px;
+    text-transform: uppercase;
 }
 
 
@@ -127,6 +128,7 @@ hr {
 h2{
     font-size: var(--h2font);
     padding: 20px 0px;
+    text-transform: uppercase;
     
 }
 
