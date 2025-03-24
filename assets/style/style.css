@@ -1,5 +1,5 @@
 :root{
-    --h2font: 30px
+    --h2font: 30px;
 }
 
 * {
@@ -158,8 +158,18 @@ h2{
 
 .certificacoes ul{
 
-    padding: 0 100px;
+    padding: 0 10%;
+    list-style: none;
+}
 
+.certificacoes li{
+    background-image: url(/assets/media/pointer.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-left: 30px;
+    color: #000;
+    filter: invert();
 }
 
 .soft-lista1{
@@ -185,19 +195,97 @@ footer{
     background-color: #111;
     width: 100vw;
     display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column ;
+    color: #DDD;
+}
+
+footer .contatos{
+    display: grid;
+    align-items: flex-end;
+    width: auto;
+    grid-template-areas: 
+    
+    "telefone telefone links links"
+    
+    ;
+    gap: 200px;
+}
+
+footer .telefone_email{
+    margin: 0;
+    grid-area: telefone;
+    align-self:flex-start;
+}
+
+footer .contatos h6{
+    margin-bottom: 10px;
+}
+
+footer .links{
+    display: flex;
+    flex-direction: column;
+    grid-area: links;
+}
+
+footer .links button{
+    background-color: #09a51e;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #E8F1F2;
+    height: 50px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    color: #DDD;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #09a51e;
+}
+
+footer .links button:hover{
+    border: 2px solid #E8F1F2;
+}
+
+footer .links button img{
+    margin-left: 10px;
+    height: 60%;
+}
+
+footer .links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .links a img{
+    margin-left: 5px;
+    height: 20px;
+}
+
+footer p{
+    margin: 100px;
+    font-size: 12px;
+}
+
+.hireme{
+    background-color: rgba(19, 41, 61, 0);
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+.hireme img{
+    width: 7vw;
 }
 
 .menuMobile{
     display: none;
-}
-
-@media (max-width: 1024px) {
-    
- 
-
 }
 
 @media (max-width: 750px){
@@ -363,8 +451,33 @@ footer{
     footer{
         font-size: 6vw;
         margin: 0 auto;
-        padding: 5% 5%;
-        text-align: justify;
-        width: auto;
+        padding: 0 5%;
+    }
+
+    footer .contatos{
+        grid-template-areas: 
+        
+        "telefone"
+        "links"
+        
+        ;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer p{
+        margin: 0;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .hireme{
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .hireme img{
+        width: 20vw;
     }
 }

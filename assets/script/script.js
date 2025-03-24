@@ -68,6 +68,10 @@ function newlayout(){
     }
 }
 
+function whatsApp(){
+    window.open('https://wa.me/5587991081827','_blank')
+}
+
 document.querySelectorAll('.btn_objetivo').forEach((e) => e.addEventListener('click', () => {
     document.querySelector('.objetivo').scrollIntoView({behavior: 'smooth'})
     })
