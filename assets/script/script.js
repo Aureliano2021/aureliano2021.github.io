@@ -46,7 +46,7 @@ function newlayout(){
                         <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_8456645.jpg" target="_blank">HTML5 e CSS3 | B7WEB<br>92 horas | 2025</a></li>
                         <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_3117813.jpg" target="_blank">JavaScript | B7WEB<br>66 horas | 2025</a></li>
                         <li><a href="https://www.dio.me/certificate/F577873D/share" target="_blank">Lógica de Programação Essencial | DIO<br>4 horas | 2021</a></li>
-                        <li><a href="https://www.dio.me/certificate/B16DD93C/share" target="_blank">Introdução ao Git e Github | DIO<br>5 horas | 2021</a></li>
+                        <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_3017556.jpg" target="_blank">Git/Github | B7WEB<br>20 horas | 2025</a></li>
                     </ul>
         `
         document.querySelector('.softskills').innerHTML = 
