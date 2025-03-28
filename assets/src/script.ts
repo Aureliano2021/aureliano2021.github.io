@@ -11,7 +11,7 @@ const asideMenuMobile = c("aside .menuMobile") as HTMLDivElement
 const logoElement = c('.logo') as HTMLImageElement
 const headerElement = c('header') as HTMLDivElement
 
-function newlayout2() {
+function newlayout2(): void {
     if (window.innerWidth < 750) {
         objetivoElement.innerHTML =
             `
@@ -72,7 +72,7 @@ function newlayout2() {
     }
 }
 
-function whatsApp2() {
+function whatsApp2():void {
     window.open('https://wa.me/5587991081827','_blank');
 };
 
