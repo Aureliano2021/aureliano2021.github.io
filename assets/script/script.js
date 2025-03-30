@@ -15,7 +15,8 @@ function newlayout(){
                     <div style="margin-bottom: 25px">
                         <div>08/2022 - 07/2023</div>
                         <div>Coordenador Censitário de Subárea<br>
-                            IBGE – São João, PE</div>
+                            IBGE – São João, PE
+                        </div>
                     </div>
                     <div style="margin-bottom: 25px">
                         <div>02/2014 - 01/2015</div>
