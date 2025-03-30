@@ -34,6 +34,7 @@ nav{
     top: 0;
     background-color: #13293D;
     border-bottom: solid #1B98E0;
+    z-index: 1;
 }
 
 nav img{
