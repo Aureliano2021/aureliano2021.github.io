@@ -56,6 +56,7 @@ function newlayout() {
                         <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_3117813.jpg" target="_blank">JavaScript | B7WEB<br>66 horas | 2025</a></li>
                         <li><a href="https://www.dio.me/certificate/F577873D/share" target="_blank">Lógica de Programação Essencial | DIO<br>4 horas | 2021</a></li>
                         <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_3017556.jpg" target="_blank">Git/Github | B7WEB<br>20 horas | 2025</a></li>
+                        <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_4529779.jpg" target="_blank">TypeScript | B7WEB<br>20 horas | 2025</a></li>
                     </ul>
         `;
         softskillsElement.innerHTML =
