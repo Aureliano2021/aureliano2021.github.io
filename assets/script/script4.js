@@ -98,7 +98,7 @@ document.querySelectorAll('.btn_softskills').forEach((e) => e.addEventListener('
 logElement.addEventListener('click', () => {
     headerElement.scrollIntoView({ behavior: 'smooth' });
 });
-btnMenuMobileEl.addEventListener('click', function novo(e) {
+btnMenuMobileEl.addEventListener('click', function novo() {
     if (apertou) {
         btnMenuMobileEl.style = 'rotate: 90deg';
         menuMobileEl.style = 'right: 0vw';
