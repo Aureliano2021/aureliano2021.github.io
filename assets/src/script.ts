@@ -1,15 +1,26 @@
 let apertou = true
 let recarregado = true;
+let c = (element:string) => {return document.querySelector(element)};
+let objetivoElement = c('.objetivo') as HTMLDivElement;
+let profissionalElement = c('.profissional') as HTMLDivElement;
+let academicoElement = c('.academico') as HTMLDivElement;
+let certificacoesElement = c('.certificacoes') as HTMLDivElement;
+let softskillsElement = c('.softskills') as HTMLDivElement;
+let logElement = c('.logo') as HTMLImageElement;
+let headerElement = c('header') as HTMLDivElement;
+let btnMenuMobileEl = c('.btn_menuMobile') as HTMLDivElement;
+let menuMobileEl = c('aside .menuMobile') as HTMLDivElement;
+
 
 function newlayout(){
     if(window.innerWidth < 750){
-        document.querySelector('.objetivo').innerHTML = 
+        objetivoElement.innerHTML = 
         `
             <h2>Objetivo</h2>
             <div>Em busca de oportunidade como Desenvolvedor de Softwares ou na área de Tecnologia da Informação.</div>
         `
     
-        document.querySelector('.profissional').innerHTML = 
+        profissionalElement.innerHTML = 
         `
             <h2>Histórico Profissional</h2>
                     <div style="margin-bottom: 25px">
@@ -24,7 +35,7 @@ function newlayout(){
                             CONEST/RNEST – Cabo de Santo Agostinho, PE</div>
                     </div>
         `
-        document.querySelector('.academico').innerHTML = 
+        academicoElement.innerHTML = 
         `
             <h2>Formação Acadêmica</h2>
                     <div style="margin-bottom: 25px">
@@ -40,7 +51,7 @@ function newlayout(){
                     </div>
         `
     
-        document.querySelector('.certificacoes').innerHTML = 
+        certificacoesElement.innerHTML = 
         `
             <h2>Certificações</h2>
                     <ul>
@@ -50,7 +61,7 @@ function newlayout(){
                         <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_3017556.jpg" target="_blank">Git/Github | B7WEB<br>20 horas | 2025</a></li>
                     </ul>
         `
-        document.querySelector('.softskills').innerHTML = 
+        softskillsElement.innerHTML = 
         `
             <h2>Habilidades e Competências</h2>
                     <ul>
@@ -74,49 +85,49 @@ function whatsApp(){
 }
 
 document.querySelectorAll('.btn_objetivo').forEach((e) => e.addEventListener('click', () => {
-    document.querySelector('.objetivo').scrollIntoView({behavior: 'smooth'})
+    objetivoElement.scrollIntoView({behavior: 'smooth'})
     })
 )
 
 document.querySelectorAll('.btn_profissional').forEach((e) => e.addEventListener('click', () => {
-    document.querySelector('.profissional').scrollIntoView({behavior: 'smooth'})
+    profissionalElement.scrollIntoView({behavior: 'smooth'})
     })
 )
 
 document.querySelectorAll('.btn_academico').forEach((e) => e.addEventListener('click', () => {
-    document.querySelector('.academico').scrollIntoView({behavior: 'smooth'})
+    academicoElement.scrollIntoView({behavior: 'smooth'})
     })
 )
 
 document.querySelectorAll('.btn_certificacoes').forEach((e) => e.addEventListener('click', () => {
-    document.querySelector('.certificacoes').scrollIntoView({behavior: 'smooth'})
+    certificacoesElement.scrollIntoView({behavior: 'smooth'})
     })
 )
 
 document.querySelectorAll('.btn_softskills').forEach((e) => e.addEventListener('click', () => {
-    document.querySelector('.softskills').scrollIntoView({behavior: 'smooth'})
+    softskillsElement.scrollIntoView({behavior: 'smooth'})
     })
 )
 
-document.querySelector('.logo').addEventListener('click', () => {
-    document.querySelector('header').scrollIntoView({behavior: 'smooth'})
+logElement.addEventListener('click', () => {
+    headerElement.scrollIntoView({behavior: 'smooth'})
 })
 
-document.querySelector(".btn_menuMobile").addEventListener('click',function novo(e){
+btnMenuMobileEl.addEventListener('click',function novo(e){
     if(apertou){
     
-        document.querySelector(".btn_menuMobile").style = 'rotate: 90deg'
+        btnMenuMobileEl.style = 'rotate: 90deg'
         
-        document.querySelector("aside .menuMobile").style = 'right: 0vw'
+        menuMobileEl.style = 'right: 0vw'
 
         setInterval(() => apertou = false, 100)
     }
 
     if(apertou === false){
     
-        document.querySelector(".btn_menuMobile").style = 'rotate: 0deg'
+        btnMenuMobileEl.style = 'rotate: 0deg'
 
-        document.querySelector("aside .menuMobile").style = 'right: -100%'
+        menuMobileEl.style = 'right: -100%'
         
         setInterval(() =>apertou = true, 100)
     }
