@@ -113,7 +113,7 @@ logElement.addEventListener('click', () => {
     headerElement.scrollIntoView({behavior: 'smooth'})
 })
 
-btnMenuMobileEl.addEventListener('click',function novo(e){
+btnMenuMobileEl.addEventListener('click',function novo(){
     if(apertou){
     
         btnMenuMobileEl.style = 'rotate: 90deg'
