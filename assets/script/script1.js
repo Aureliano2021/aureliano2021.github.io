@@ -79,7 +79,9 @@ function newlayout() {
     }
 }
 function whatsApp() {
-    window.open('https://wa.me/5587991081827', '_blank');
+    const mensagem = "Olá, vi seu currículo e gostaria de discutir uma possível oportunidade de emprego."
+    const url = `https://wa.me/5587991081827?text=${encodeURIComponent(mensagem)}`;
+    window.open(url, '_blank');
 }
 document.querySelectorAll('.btn_objetivo').forEach((e) => e.addEventListener('click', () => {
     objetivoElement.scrollIntoView({ behavior: 'smooth' });
