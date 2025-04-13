@@ -57,6 +57,7 @@ function newlayout() {
                         <li><a href="https://www.dio.me/certificate/F577873D/share" target="_blank">Lógica de Programação Essencial | DIO<br>4 horas | 2021</a></li>
                         <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_3017556.jpg" target="_blank">Git/Github | B7WEB<br>20 horas | 2025</a></li>
                         <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_4529779.jpg" target="_blank">TypeScript | B7WEB<br>20 horas | 2025</a></li>
+                        <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_4674208.jpg" target="_blank">TailwindCSS | B7WEB<br>20 horas | 2025</a></li>
                     </ul>
         `;
         softskillsElement.innerHTML =
@@ -79,7 +80,7 @@ function newlayout() {
     }
 }
 function whatsApp() {
-    const mensagem = "Olá, vi seu currículo e gostaria de discutir uma possível oportunidade de emprego."
+    const mensagem = "Olá, vi seu currículo e gostaria de discutir uma possível oportunidade de emprego.";
     const url = `https://wa.me/5587991081827?text=${encodeURIComponent(mensagem)}`;
     window.open(url, '_blank');
 }
