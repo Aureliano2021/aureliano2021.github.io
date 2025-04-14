@@ -55,12 +55,12 @@ function newlayout(){
         `
             <h2>Certificações</h2>
                     <ul>
-                        <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_8456645.jpg" target="_blank">HTML5 e CSS3 | B7WEB<br>92 horas | 2025</a></li>
-                        <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_3117813.jpg" target="_blank">JavaScript | B7WEB<br>66 horas | 2025</a></li>
+                        <li><a href="https://app.b7web.com.br/certificates/8456645" target="_blank">HTML5 e CSS3 | B7WEB<br>92 horas | 2025</a></li>
+                        <li><a href="https://app.b7web.com.br/certificates/3117813" target="_blank">JavaScript | B7WEB<br>66 horas | 2025</a></li>
                         <li><a href="https://www.dio.me/certificate/F577873D/share" target="_blank">Lógica de Programação Essencial | DIO<br>4 horas | 2021</a></li>
-                        <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_3017556.jpg" target="_blank">Git/Github | B7WEB<br>20 horas | 2025</a></li>
-                        <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_4529779.jpg" target="_blank">TypeScript | B7WEB<br>20 horas | 2025</a></li>
-                        <li><a href="https://alunos.b7web.com.br/media/certificates/certificado_4674208.jpg" target="_blank">TailwindCSS | B7WEB<br>20 horas | 2025</a></li>
+                        <li><a href="https://app.b7web.com.br/certificates/344298ba-172d-4ec2-ac93-fa1d1a40c8c7" target="_blank">Git/Github | B7WEB<br>8 horas | 2025</a></li>
+                        <li><a href="https://app.b7web.com.br/certificates/31509c4e-9530-42e4-956a-ae386a0a5495" target="_blank">TypeScript | B7WEB<br>5 horas | 2025</a></li>
+                        <li><a href="https://app.b7web.com.br/certificates/6b747259-5acd-4bb1-adfd-1c469cfe5c97" target="_blank">TailwindCSS | B7WEB<br>8 horas | 2025</a></li>
                     </ul>
         `
         softskillsElement.innerHTML = 
